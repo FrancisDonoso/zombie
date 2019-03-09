@@ -75,7 +75,7 @@ public class ZombiesStudentVersion
         for (int i = 1; i < N; i++)
         {
             S = S + - (beta * S * Z * dt);
-			L = L + (beta * S * Z * dt) - ( k * L );
+	    L = L + (beta * S * Z * dt) - ( k * L );
             Z = Z + ( k * L ) - (alpha * S * Z) + (zeta * R * dt);
             R = R + (alpha * S * Z * dt) - (zeta * R * dt);
             t = t + dt;
